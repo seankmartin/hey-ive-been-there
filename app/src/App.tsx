@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Stage, OrbitControls } from "@react-three/drei";
 import Earth from "./Earth";
-import {Perf} from "r3f-perf";
+import { Perf } from "r3f-perf";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Earth />
       </Stage>
       <OrbitControls />
-      <Perf position="top-left"/>
+      <Perf position="top-left" />
     </Canvas>
   );
 }
