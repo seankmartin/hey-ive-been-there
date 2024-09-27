@@ -7,13 +7,11 @@ function App() {
   return (
     <Canvas>
       <Stage
-        shadows={{ type: "contact", opacity: 0.2, blur: 3 }}
+        shadows={{ type: "contact", opacity: 0.4, blur: 3 }}
         environment="night"
       >
-        <mesh position={[0, 1, 0]}>
-          <boxGeometry args={[1, 1, 1]} />
-          <meshStandardMaterial color="hotpink" />
-        </mesh>
+        <ambientLight intensity={Math.PI} />
+        <directionalLight position={[10, 10, 10]} intensity={0.5} />
         <Earth />
       </Stage>
       <OrbitControls />
