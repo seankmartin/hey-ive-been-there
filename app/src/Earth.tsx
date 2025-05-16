@@ -21,7 +21,7 @@ function Earth() {
 
   return (
     <mesh ref={ref}>
-      <sphereGeometry args={[5, 64, 32]} />
+      <sphereGeometry args={[5, 64, 64]} />
       <meshStandardMaterial
         emissive={"red"}
         emissiveIntensity={5}
