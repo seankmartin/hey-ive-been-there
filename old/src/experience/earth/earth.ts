@@ -1,6 +1,6 @@
 import * as THREE from "three";
-import earthVertexShader from "experience/shaders/earth/vertex.glsl";
-import earthFragmentShader from "experience/shaders/earth/fragment.glsl";
+import earthVertexShader from "./vertex.glsl";
+import earthFragmentShader from "./fragment.glsl";
 
 export default class Atlas {
   earthGeometry: THREE.SphereGeometry;

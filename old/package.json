@@ -12,6 +12,7 @@
     "@types/three": "^0.162.0",
     "typescript": "^5.2.2",
     "vite": "^5.1.6",
+    "vite-plugin-string": "^1.2.3",
     "vite-tsconfig-paths": "^4.2.0"
   },
   "dependencies": {

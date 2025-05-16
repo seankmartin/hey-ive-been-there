@@ -1,4 +1,4 @@
-import EventEmitter from "experience/utils/event_emitter";
+import EventEmitter from "./event_emitter.ts";
 
 export default class Time extends EventEmitter {
   start = Date.now();

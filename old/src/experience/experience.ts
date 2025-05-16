@@ -1,8 +1,8 @@
 import * as THREE from "three";
-import Earth from "experience/earth/earth.ts";
-import Renderer from "experience/renderer.ts";
-import Camera from "experience/camera.ts";
-import Time from "experience/utils/time.ts";
+import Earth from "./earth/earth.ts";
+import Renderer from "./renderer.ts";
+import Camera from "./camera.ts";
+import Time from "./utils/time.ts";
 
 export default class Experience {
   canvas: HTMLCanvasElement;
