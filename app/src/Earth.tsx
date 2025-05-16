@@ -24,7 +24,7 @@ function Earth() {
       <sphereGeometry args={[5, 64, 32]} />
       <meshStandardMaterial
         emissive={"red"}
-        emissiveIntensity={Math.PI}
+        emissiveIntensity={5}
         roughness={0.8}
         {...props}
       />
