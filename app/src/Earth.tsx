@@ -7,8 +7,8 @@ function Earth() {
   const props = useTexture({
     map: "earth/8k_earth_nightmap.jpg",
     normalMap: "earth/normal.jpg",
-    roughnessMap: "earth/specular.jpg",
-    emissiveMap: "earth/specular.jpg",
+    roughnessMap: "earth/roughness.jpg",
+    emissiveMap: "earth/light.jpg",
   });
 
   const ref = React.useRef<THREE.Mesh>(null);
@@ -24,8 +24,8 @@ function Earth() {
       <sphereGeometry args={[5, 64, 32]} />
       <meshStandardMaterial
         emissive={"red"}
-        emissiveIntensity={0.01}
-        roughness={0.4}
+        emissiveIntensity={Math.PI}
+        roughness={0.8}
         {...props}
       />
     </mesh>
