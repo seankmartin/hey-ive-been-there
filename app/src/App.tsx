@@ -6,10 +6,10 @@ import { Perf } from "r3f-perf";
 function App() {
   return (
     <Canvas>
-      <Environment background near={1} far={1000} resolution={2048} environmentIntensity={5}>
+      <Environment background near={1} far={100000} resolution={2048} environmentIntensity={3}>
         <Stars
           radius={70}
-          depth={40}
+          depth={100}
           count={10000}
           factor={4}
           saturation={1}
@@ -17,7 +17,7 @@ function App() {
           speed={1}
         />
       </Environment>
-      <ambientLight intensity={6}/>
+      <ambientLight intensity={4}/>
       <Earth />
       <OrbitControls makeDefault />
       <Perf position="top-left" />
