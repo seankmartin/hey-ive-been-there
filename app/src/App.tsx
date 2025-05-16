@@ -1,7 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars, Environment } from "@react-three/drei";
-import Earth from "./Earth";
-import Marker from "./Marker";
+import Group from "./Group";
 import { Perf } from "r3f-perf";
 
 function App() {
@@ -25,10 +24,7 @@ function App() {
         />
       </Environment>
       <ambientLight intensity={4} />
-      <group>
-        {/* <Marker position={[10, 1, 1]} /> */}
-        <Earth />
-      </group>
+      <Group />
       <OrbitControls makeDefault />
       <Perf position="top-left" />
     </Canvas>

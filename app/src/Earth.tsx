@@ -1,7 +1,4 @@
 import { useTexture } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
-import React from "react";
-import * as THREE from "three";
 
 function Earth() {
   const props = useTexture({
@@ -11,16 +8,8 @@ function Earth() {
     emissiveMap: "earth/light.jpg",
   });
 
-  const ref = React.useRef<THREE.Mesh>(null);
-
-  useFrame((state, delta, xrFrame) => {
-    if (ref.current) {
-      ref.current.rotation.y += delta / 10;
-    }
-  });
-
   return (
-    <mesh ref={ref}>
+    <mesh>
       <sphereGeometry args={[5, 64, 64]} />
       <meshStandardMaterial
         emissive={"red"}
